@@ -30,8 +30,7 @@
             "jsxBracketSameLine": false
           }
         ],
-        "shopify/binary-assignment-parens": "off",
-        "prefer-arrow-callback": "off"
+        "shopify/binary-assignment-parens": "off"
       }
   }
 }

@@ -1,9 +1,5 @@
-module.exports = {
-  create: function(context) {
-    function isInvalidAssertCallExpression(node) {
-      return isAssertExpression(node.callee) && node.arguments.some(function(arg) {
-        return isRewritableSinonExpression(arg, SINON_ASSERT);
-      });
-    }
-  },
-};
+function foo() {
+  return isTrue && [0,1,2].map(function(num) {
+    return num * 2;
+  });
+}

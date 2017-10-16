@@ -15,6 +15,7 @@
   },
   "eslintConfig": {
     "extends": [
+      "plugin:shopify/node",
       "plugin:shopify/esnext",
       "prettier"
     ],

@@ -7,30 +7,36 @@
     "lint": "eslint . --max-warnings 0"
   },
   "devDependencies": {
+    "babel-eslint": "^8.0.1",
     "eslint": "^4.9.0",
     "eslint-config-prettier": "^2.6.0",
     "eslint-plugin-prettier": "^2.3.1",
-    "eslint-plugin-shopify": "^17.1.0",
     "prettier": "^1.7.4"
   },
   "eslintConfig": {
     "extends": [
-      "plugin:shopify/node",
-      "plugin:shopify/esnext",
       "prettier"
     ],
-    "plugins": ["prettier"],
-      "rules": {
-        "prettier/prettier": [
-          "error",
-          {
-            "singleQuote": true,
-            "trailingComma": "es5",
-            "bracketSpacing": false,
-            "jsxBracketSameLine": false
-          }
-        ],
-        "shopify/binary-assignment-parens": "off"
-      }
+    "parser": "babel-eslint",
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "trailingComma": "es5",
+          "bracketSpacing": false,
+          "jsxBracketSameLine": false
+        }
+      ],
+      "prefer-arrow-callback": [
+        "error",
+        {
+          "allowNamedFunctions": true
+        }
+      ]
+    }
   }
 }
